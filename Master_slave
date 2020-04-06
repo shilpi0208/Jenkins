@@ -1,0 +1,11 @@
+https://s3-us-west-2.amazonaws.com/taisluwebsitebucket1/HTML/pdf/Install+and+Configure+Jenkins+on+AWS+EC2.pdf
+1. sudo yum update -y
+2.check the version : java -version
+3.if it is less than 1.8, install by sudo yum install java-1.8.0
+4.Add the jenkins repo using following command:
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+5.Import a key file from Jenkins-CI to enable installation from the package
+ sudo rpm — import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+6. install jenkins : sudo install jenkins -y
+7. Start service : sudo service jenkins start
+8.systemctl status jenkins
